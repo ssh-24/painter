@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>캔버스 그림판 만들기</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="utility">
+      <label>
+        <span>색상</span>
+        <input type="color" value="#000000" class="js-colorPicker" />
+      </label>
+      <label>
+        <span>크기(7)</span>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="7"
+          step="1"
+          class="js-penSize"
+        />
+      </label>
+      <button type="button" class="js-erager">지우개</button>
+      <button type="button" class="js-clear">초기화</button>
+    </div>
+    <canvas class="canvas" width="600" height="600"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
